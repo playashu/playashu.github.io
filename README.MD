@@ -1,4 +1,4 @@
-[LAST UPDATED IN October 2020]
+[LAST UPDATED IN October 2021]
 * Website designed and tested to work perfectly on Microsoft EDGE (Chromium Based)
 * Although website is not responsive to the size adjustment!
 * Some animations are also added.
