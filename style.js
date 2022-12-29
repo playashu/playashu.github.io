@@ -119,7 +119,7 @@ function welcome() {
    // document.querySelector(".container").style.animation = "welcomeUp 1s forwards";
     document.getElementById("message1").style.animation = "messagePop " + t + "s forwards";
     setTimeout(() => {
-      document.getElementById("message1").innerHTML = "<h1>My website entirely made from CSS, HTML and Javascript without using any libraries. Website is made to adopt to size of the screen (Require Refresh To adopt to mobile sizes).</h1>";
+      document.getElementById("message1").innerHTML = "<h1>My website entirely made from CSS, HTML and Javascript without using any libraries. Website is made to adopt to size of the Screen (Require Refresh To adopt to mobile sizes).</h1>";
     }, t * 670);
   }, t * 900);
 
