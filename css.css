@@ -1,0 +1,488 @@
+html{
+  width: 100%;
+}
+.footer{
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 3vh;
+  font-family: sans-serif;
+ 
+}
+#nav{
+  height:10vh;
+  width: 100%;
+  background: black;
+  opacity: 1;
+  position:fixed;
+  top:0vh;
+  z-index:10;
+}
+#button{
+  padding: 2vh 1vh 0 2vh;
+  font-size: 4vh;
+  position: relative;
+  display: none;
+  height: 7vh;
+  width: 7vh;
+  background-color:rbga(256,256,256,0.01);
+  color: white;
+  margin: auto;
+}
+.navigation{
+  display: none;
+  list-style: none;
+  opacity: 0;
+  z-index:11;
+  text-decoration: none;
+}
+.navigation li{
+
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3vh;
+  height: 10vh;
+  z-index:11;
+  width: fit-content;
+  color: rgba(256,256,256,0.5);
+  margin: 0 1vw;
+}
+.navigation li a{
+  text-decoration: none;
+  height: 10vh;
+  width: fit-content;
+  color: rgba(256,256,256,0.5);
+}
+.navigation li a:hover{
+  text-decoration: none;
+  height: 10vh;
+  width: fit-content;
+  color: rgba(256,256,256,0.9);
+}
+.navigationMobile{
+  display: none;
+  width: 2000px;
+  background-color: black;
+  list-style: none;
+  opacity: 0;
+  z-index:11;
+  text-decoration: none;
+}
+.navigationMobile li{
+  background-color: black;
+  display: block;
+  width: 100vw;
+  text-decoration: none;
+  font-size: 3vh;
+  height: 8vh;
+  z-index:11;
+  width: fit-content;
+  color: rgba(256,256,256,0.5);
+  margin: 0 1vw;
+}
+.navigationMobile li a{
+  text-decoration: none;
+  height: 8vh;
+   width: 100vw;
+  color: rgba(256,256,256,0.5);
+}
+.navigationMobile li a:hover{
+  text-decoration: none;
+  width: 100%;
+  height: 8vh;
+   width: 100vw;
+  color: rgba(256,256,256,0.9);
+}
+.container{
+  margin: 0;
+  padding: 0;
+  font-size: 3vh;
+}
+.title{
+  width: 100%;
+  padding: 6vh 0;
+  background-color: rgba(0,0,0,0.1);
+  
+  margin: 0;
+  text-align: center;
+  font-size: 6vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.projectRow{
+  background-color: rgba(0,0,0,0.06);
+  border-radius: 8vh;
+  padding: 8vh 2vw;
+  width: wrap;
+ 
+}
+.projectTitle{
+  margin:0;
+  text-align: center;
+  font-size: 6vh;
+  margin-top: 0vh;
+  margin-bottom: 15vh;
+}
+.timeLine{
+  position: relative;
+  margin: 0 auto;
+   width:fit-content;
+   font-size: 3vh;
+   min-width:40vw;
+}
+.timeLineData{
+  position: relative;
+  top:-30vh;
+  display: inline;
+  padding: 0vh 4vh;
+  color: #333;
+  width: wrap;
+   
+
+   overflow: hidden;
+}
+.timeLineDataContainer{
+ border: solid;
+ padding: 2vh 5vh;
+ border-radius:5vh;
+ max-width: 30vw;
+ line-height: 4vh;
+ width: wrap;
+ overflow: hidden;
+}
+#message{
+  margin: auto;
+  margin-top: 40vh;
+
+  text-align: center;
+  width:40vw;
+  height:1vh;
+  opacity: 0;
+  font: Helvetica, sans-serif;
+}
+#message1{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70vh;
+  position: absolute;
+  display: blocks;
+  left: 0; 
+  right: 0; 
+  text-align: center;
+  float: center;
+  width:50vw;
+  height:1vh;
+  opacity: 0;
+  font-size: 0.4em;
+  font: Helvetica, sans-serif;
+}
+#line{
+  position: relative;
+  max-width: 1200px;
+  margin: 5vh auto -10px auto;
+  margin-bottom: 0;
+}
+/* The actual timeline (the vertical ruler) */
+#line::after {
+  content: '';
+  top:0;
+  height:80%;
+  position: absolute;
+  width: 0.6vw;
+  background-color: orange;
+  z-index: -1;
+  left: 50%;
+  margin: 0 auto;
+}
+#phase{
+  display: block;
+  width: 23vh;
+  position: relative; 
+  margin: auto ;
+  height: 23vh;
+  background-color: white;
+  border: 0.6vw solid #FF9F55;
+  border-radius: 50%;
+  z-index: 1;
+}
+#phase p{
+  position: relative;
+  top:2.5vh;
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+  font-size: 3.5vh;
+}
+#frontButton{
+  text-align: center;
+  position: relative;
+  top:40vh;
+  opacity: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#pic{
+  top:10vh;
+  width:52vh;
+  height: 52vh;
+  position: relative;
+  top: -1009.5vh; 
+  overflow: hidden;
+  margin: auto;
+  background-color: blue;
+  border-radius: 50%;
+
+  opacity: 0;
+}
+#name{
+  display: block; width: fit-content;
+  margin: 0 auto;
+  top:-10vh;
+  
+  position: relative;
+
+}
+.social li{
+  list-style-type: none; display: inline-block;
+}
+
+.btn img{
+  height:10vh;
+  width:10vh;
+}
+#box{
+  width:5vh;
+
+  height: 5vh;
+
+  border-radius: 1.5vh;
+  position: relative;
+  padding: 0px;
+  margin: auto;
+  color: white;
+  font-size: 4vh;
+  font-family: sans-serif;
+  background-color: #181818;
+  opacity: 0;
+  display: inline-block;
+  top: 20vh;
+}
+
+#box p{
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px;
+}
+#AboutMe{
+  display: block;
+  top:0vh;
+}
+.onePage{
+  height: 100vh;
+
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  border: none;
+}
+.twoPage{
+  height: 160vh; 
+  max-height: 100vw;
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  border: none;
+}
+.stripped:nth-of-type(odd){
+  background-color: #ffffff;
+}
+.stripped:nth-of-type(even){
+    background-color: #cdcdcd;
+}
+.contactDesktop{
+  height:22vh;
+  width:30vw;
+   top:25vh;
+
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  left:17%;
+}
+.captionDesktop{
+  height:21vh;
+  width:35vw;
+  top:25vh;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  float: right;
+  right:15%;
+}
+
+.contactMobile{
+  height:17vh;
+  width:fit-content;
+   top:12vh;
+   
+
+  position: relative;
+  display: block;
+  margin: auto;
+}
+.captionMobile{
+  width:70vw;
+  top:12vh;
+  
+  position: relative;
+  display: block;
+
+  margin: auto;
+  float: right;
+  right:15%;
+}
+.section{
+  top: 40vh;
+  position: relative;
+  display: block;
+}
+.university{
+  font-weight: bold;
+  font-size: 3.5vh;
+  color: #333;
+}
+.location{
+  font-style:italic;
+  font-size: 3.5vh;
+  color: #555;
+}
+.position,.subject{
+   font-variant: small-caps;
+  font-size: 3.5vh;
+  
+}
+
+.tableData{
+
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45vw;
+  min-width: 50vh;
+  float: center ;
+  height: fit-content;
+}
+
+#skills{
+  margin-bottom: 20vh;
+  min-width: 40vh;
+}
+.skillEntry{
+  width: 44vw;
+  min-width: 50vh;
+  margin: 12vh auto;
+  height:auto;
+  padding: 5vh 3vw;
+  background-color: rgba(0,0,0,0.06);
+  border-radius: 8vh;
+}
+.skillEntryContent{
+  display: inline-block;
+  height:30vh;
+  margin: 0vw auto;
+}
+.skillEntryHead{
+  display: inline;margin: auto;
+  width:40vh;
+  height:8vh; 
+}
+.badge{
+  display: block;
+  margin: auto;
+  width: 11vw;
+  min-width: 18vh;
+  max-width: 45vw;
+  float: center;
+  margin: 3vh;
+
+}
+.center{
+  display: blocks;
+  text-align: center;
+  float: center;
+}
+.project{
+  margin: auto;
+  padding: 4vh 0vh;
+  width: 80vw;
+  
+  height:60vh;
+}
+.project img{
+  margin:0vh;
+  width: 40vh;
+  height:40vh;
+}
+.line{
+  width: fit-content;
+  display: inline-block;
+  margin: auto;
+}
+@keyframes intro {
+  0%   {top: 26vh;width: 5vh; opacity: 0;transform: scale(0.2, 0.2);}
+   40%  {top: 10vh;width: 5vh; opacity: 0.3;}
+  100%  {top: 19vh;width: 5vh;opacity: 1;transform: scale(1, 1);}
+}
+@keyframes slidein {
+  0%   {top: -39.5vh; opacity: 0;  transform: scale(0.2);}
+  40%   {top: 17vh; opacity: 0.4;  transform: scale(0.6);}
+  100%  {top:10vh;opacity: 1;  transform: scale(1);}
+}
+@keyframes hide {
+  0%   {top: 19vh;width: 5vh; opacity: 1;transform: scale(1);}
+   60%  {top: 10vh;width: 5vh; opacity: 0.3;}
+  100%  {top: 26vh;width: 5vh;opacity: 0;transform: scale(0.2);}
+}
+@keyframes fadein {
+  0%     {display: none ;opacity: 0; transform: scale(1)}
+  10%     {display: inline-block ; opacity: 0;transform: scale(1)}
+  100%   {display: inline-block ;opacity: 1; transform: scale(1);}
+}
+@keyframes slideInMenu {
+  0%     {opacity: 0; margin-top:-200vh ;}
+  100%   {opacity: 1; margin-top: 0vh;}
+}
+@keyframes slideOutMenu {
+  0%     {opacity: 1; margin-top: 0vh;}
+  100%   {opacity: 0; margin-top:-200vh ;}
+}
+@keyframes fadeout {
+  0%     {opacity: 1; transform: scale(1)}
+  100%   {opacity: 0; transform: scale(0);}
+}
+@keyframes welcomeUp {
+  0%     {display: block; position: relative; top:0vh;}
+  100%   {display: block; position: relative;top: -100vh;}
+}
+@keyframes navPop {
+  0%   {opacity: 0; top: 100vh;}
+  100%  {opacity: 1; top:0vh;}
+}
+@keyframes messagePop {
+  0%   {opacity: 0;}
+  40%  {opacity: 1;}
+  67%  {opacity: 0;}
+  85%  {opacity: 1;}
+   100%  {opacity: 1;}
+}
+@keyframes red {
+  0%   {
+  100%  {opacity: 1; top:0vh;}
+}
