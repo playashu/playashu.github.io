@@ -167,7 +167,7 @@ body{
 #message1{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70vh;
+  margin-top: 66vh;
   position: absolute;
   display: blocks;
   left: 0; 
@@ -177,6 +177,7 @@ body{
   width:50vw;
   height:1vh;
   opacity: 0;
+  color: #ca0000;
   font-size: 0.4em;
   font: Helvetica, sans-serif;
 }
